@@ -1,0 +1,189 @@
+\documentclass[tcc-proposta]{texufpel}
+
+\usepackage[utf8]{inputenc} % acentuacao
+\usepackage{graphicx} % para inserir figuras
+\usepackage[T1]{fontenc}
+\usepackage[table,xcdraw]{xcolor}
+
+\hypersetup{
+    hidelinks, % Remove coloração e caixas
+    unicode=true,   %Permite acentuação no bookmark
+    linktoc=all %Habilita link no nome e página do sumário
+}
+
+\unidade{Centro de Desenvolvimento Tecnológico}
+\curso{Ciência da Computação}
+\nomecurso{Bacharelado em Ciência da Computação}
+\titulocurso{Bacharel em Ciência da Computação}
+
+\title{Ferramenta que utiliza Computação Gráfica para auxiliar na aprendizagem}
+
+\author{Sampaio}{Letícia}
+\advisor[Prof.~Dr.]{Torchelsen}{Rafael Piccin}
+%\coadvisor[Prof.~Dr.]{Aguiar}{Marilton Sanchotene de}
+%\collaborator[Prof.~Dr.]{Aguiar}{Marilton Sanchotene de}
+
+\begin{document}
+
+%\renewcommand{\advisorname}{Orientadora}           %descomente caso tenhas orientadora
+%\renewcommand{\coadvisorname}{Coorientadora}      %descomente caso tenhas co-orientadora
+
+\maketitle 
+\sloppy
+
+\chapter{Dados de Identificação}
+
+\section{Nome do Projeto}
+Ferramenta que utiliza Computação Gráfica para auxiliar na aprendizagem
+
+\section{Local de Realização}
+Universidade Federal de Pelotas
+
+\section{Responsável pelo Projeto}
+Letícia Sampaio
+
+lsampaio@inf.ufpel.edu.br
+
+\section{Professor Orientador}
+Prof. Rafael Piccin Torchelsen
+
+rafael.torchelsen@inf.ufpel.edu.br
+
+% \section{Professor Co-orientador}
+% Prof. (Nome do Professor)
+
+\chapter{Sumário Executivo}
+% (NO MÁXIMO 1 PÁGINA)
+
+% Apresentar aqui uma breve Introdução ao Problema que está se pretendendo resolver ou abordar. Além disso, nesta seção, apresenta(m)-se o(s) principal(is) objetivo(s) do projeto e, portanto, a(s) principal(is) contribuição(ções)~\citet{Moore:1979:MAI,Aguiar:2005}.
+
+Para alunos dos cursos de Ciência e Engenharia de Computação encontrar conteúdo para estudar é uma tarefa fácil, entretanto existem poucas fontes de pesquisa que disponibilizam um conteúdo interativo. Conceitos ensinados de forma apenas teórica podem surgir como barreira para uma parcela desses alunos. Sendo a forma de aprendizado de cada indivíduo ocorrer de diferentes maneiras, transformar um conteúdo teórico em prático e a importância de uma fonte de estudo acessível para qualquer tipo de sistema operacional aumenta o aproveitamento das aulas.
+
+Com este trabalho proponho um site com exemplos visuais e interativos de conteúdos abordados nas cadeiras de graduação dos cursos de Ciência e Engenharia de Computação. Utilizando conceitos de computação gráfica o aluno poderá visualizar exemplos e aprender de forma mais fácil o conteúdo abordado. Além da versão visual também será disponibilizado uma explicação textual do conteúdo.
+
+Como exemplos de conteúdos podemos ter: uma simulação de concorrência de processos, o processo de envio de mensagens utilizando protocolos da internet ou até uma simulação de sincronização do clock do CPU com o monitor do usuário.
+
+O site poderá dessa forma ser utilizado como ferramenta para estudo extra classe ou até como uma ferramenta para auxiliar o professor no ensino a distância.
+
+\chapter{Histórico e Justificativa}
+% (NO MÍNIMO 1 PÁGINA)
+
+% Nesta seção, apresenta-se um breve histórico da área de concentração do Projeto, partindo do tema mais abrangente até chegar especificamente no assunto do Projeto. Além disso, apresenta-se a justificativa para a realização do trabalho, sua importância acadêmica ou para comunidade e grau de inovação. Poderá também apresentar as distinções entre o trabalho atual e outros trabalhos já realizados~\cite{vonNeumann:1966:TSR}.
+
+Guiados por professores, os alunos, têm o objetivo de aprender o conteúdo definido no programa da graduação, já a forma que o conhecimento é passado ao aluno fica por responsabilidade do professor. Para algumas cadeiras é muito difícil explicar a aplicação do conceito sendo passado, por ser um conceito abstrato ou por falta de recursos visuais. Nesses casos os professores podem recorrer a técnicas ou ferramentas que auxiliem os alunos a aprender de forma mais dinâmica o conteúdo.
+
+Uma ferramenta que está muito presente no ensino extra classe é o Ambiente Virtual de Aprendizagem (AVA) que conforme Voss~\cite{Voss_Nunes_Herpich_Medina_2015} é um ambiente que aperfeiçoa a qualidade do ensino dos alunos, por meio de atividades além da sala de aula. Levando em consideração o contexto de ensino a distância, essas ferramentas se tornam essenciais para o desenvolvimento de um ensino de qualidade. 
+
+No contexto computacional é comum aos professores buscarem formas de atrair a atenção dos alunos por meio de exemplos e atividades práticas que sejam interessantes para eles, como jogos e a robótica. Neste contexto simulações podem se tornar outro modo de cativar o interesse dos alunos por serem aplicáveis para alunos de qualquer nível ou idade, além de retirar a dependência de um ambiente físico para exemplificação de um conteúdo~\cite{kincaid2003simulation}.
+
+O conhecimento é fixado de forma diferente para cada pessoa, porém estímulos visuais se mostram mais eficientes no aprendizado, pois podem explorar de forma lúdica conceitos mais complexos~\cite{klawe1999computer}. Por este motivo o propósito do projeto proposto é fazer com que até as cadeiras que não possuem uma vertente prática possam utilizar de uma ferramenta dinâmica como auxiliar.
+
+Com base em simulações visuais e interativas os alunos podem explorar o que os conteúdos teóricos podem representar. Alguns trabalhos semelhantes já foram desenvolvidos e apresentaram resultado positivo em outros públicos alvo. Um trabalho similar, mas voltado aos alunos de ensino médio, é o site PHET~\cite{phet_2002}. Ele conta com diversas simulações que envolvem física, matemática e química. No site é possível acessar a biblioteca de simulações e interagir com variáveis e ver uma animação representando a mudança que essas variáveis trazem. 
+
+Também temos o livro Immersive Linear Algebra~\cite{strom2017immersive} que conta com modelos em 3D e iterativos que ajudam na fixação e compreensão do conteúdo explicado. Com os modelos disponíveis no livro é possível ver as alterações que as fórmulas implicam nos gráficos e assim entender de forma gradual sua função.
+
+Podemos utilizar o site WebGL Fundamentals~\cite{webgl_2017} também como referência de que contando com exemplos visuais o conteúdo sendo explicado se fixa melhor. No site aprendemos como utilizar a ferramenta WebGL, com exemplos iterativos junto à explicação.
+
+Embora estas ferramentas possam ser utilizadas nos cursos de Ciência e Engenharia de Computação, para cadeiras pontuais, nenhuma oferece uma plataforma interdisciplinar. 
+
+\chapter{Objetivos e Metas}
+% Nesta seção, apresentam-se o objetivo Geral e os objetivos Específicos
+% do Projeto. Os objetivos não devem ser confundidos com as
+% atividades. Para a definição das atividades, deve-se partir dos
+% objetivos determinados nesta seção. O objetivo Geral do Projeto
+% necessariamente deve ser algum resultado prático (implementação) ou
+% teórico (modelos formais ou especificações ou validações) produto da
+% pesquisa realizada no período de Projeto de Conclusão de Curso. Assim
+% como os objetivos específicos, que são considerados como subprodutos
+% do Objetivo Geral.
+O objetivo geral do projeto é criar uma plataforma que mostre simulações aos alunos, mas para a apresentação criarei um protótipo de como podem ser utilizadas simulações para exemplificação de conceitos. Então para a resolução do projeto temos os seguintes objetivos:\newline
+
+\textbf{Objetivo geral:}
+\begin{itemize}
+    \item Plataforma digital para visualização das simulações
+    \item Protótipo de simulação
+\end{itemize}
+
+\textbf{Objetivos específicos:}
+\begin{itemize}
+    \item Implementação do front-end da página
+    \item Pesquisa com relação ao conteúdo a ser apresentado como protótipo
+    \item Implementação do protótipo
+\end{itemize}
+    
+\chapter{Metodologia}
+% Nesta seção, apresenta-se a metodologia proposta para o
+% desenvolvimento do Projeto. O proponente do Projeto deve descrever
+% superficialmente as atividades necessárias para a conclusão dos
+% objetivos propostos, normalmente utilizando um parágrafo para cada
+% objetivo.
+A implementação do fron-end se dará com a tecnologia React, se mostrando uma tecnologia atual e por utilizar a linguagem JavaScript é compatível com a ferramenta necessária para a parte de computação gráfica. Também será utilizado o conceito de aplicação de página única, que traz a dinamicidade que unirá o front com as animações.
+
+Junto com o exemplo visual será necessária uma base teórica bem consolidada para execução de forma robusta. Com isto em vista, uma pesquisa do conteúdo fará parte do processo de produção, também como uma revisão com o professor que apresenta a cadeira relacionada ao conteúdo.
+
+Após o levantamento dos dados podemos partir para a criação deste protótipo. Como será uma aplicação web, a tecnologia utilizada será WebGL, com ela será possível criar elementos e iterações visuais simples mas que representem o conteúdo necessário. WebGL é uma api que utiliza o elemento Canvas do HTML 5 para apresentação e a linguagem JavaScript para manipulação dos elemento a serem animados. 
+
+\chapter{Plano de Atividades e Cronograma}
+% (PARA 1 ANO)
+
+% Nesta seção, apresenta-se a relação numerada de atividades (de estudo,
+% modelagem, especificação, implementação ou validação) que deverão ser
+% realizadas durante o Projeto de Conclusão de Curso. Dentre estas
+% atividades, constam como obrigatórias as atividades de Escrita da
+% Monografia, Entrega das Monografias Intermediária e Final e
+% Apresentação Final (Banca), nos meses definidos pelo professor
+% responsável do Projeto de Conclusão de Curso. Pode constar,
+% opcionalmente, atividades para publicação de trabalhos e apresentação
+% em eventos.
+
+\begin{enumerate}
+    \item Criação dos mockups
+    \item Desenvolvimento dos mockups em HTML
+    \item Desenvolvimento da parte interativa com WebGL
+    \item Escrita da proposta
+    \item Escrita das possíveis correções da proposta
+    \item Escrita da monografia
+    \item Preparação da apresentação para defesa
+\end{enumerate}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Atividade/mês} & \textbf{Mês 1} & \textbf{Mês 2} & \textbf{Mês 3} \\ \hline
+\textbf{1}             & X              &                &                \\ \hline
+\textbf{2}             & X              &                &                \\ \hline
+\textbf{3}             & X              & X              &                \\ \hline
+\textbf{4}             & X              &                &                \\ \hline
+\textbf{5}             &                & X              &                \\ \hline
+\textbf{6}             & X              & X              & X              \\ \hline
+\textbf{7}             &                &                & X              \\ \hline
+\end{tabular}
+\end{table}
+
+\bibliography{bibliografia}
+\bibliographystyle{abnt}
+
+\chapter{Assinaturas}
+\vspace{2cm}
+
+\begin{center}
+\rule{8cm}{.3mm}
+\medskip
+
+	Letícia Sampaio\\
+	Proponente
+
+\end{center}
+
+\vspace{4cm}
+
+\begin{center}
+\rule{8cm}{.3mm}
+\medskip
+
+	Rafael Piccin Torchelsen\\
+	Prof. Orientador
+
+\end{center}
+\end{document}
